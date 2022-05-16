@@ -52,15 +52,27 @@ curl "http://162.55.220.72:5005/get_method?name=nastya&age=30"
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
 touch script.sh
+
 cat >> script.sh
-   #!/bin/bash
-   cd part2
-   mkdir 1 2 3
-   cd 1
-   touch file1.txt file2.txt file3.txt file4.json file5.json
-   mkdir privet1 privet2 privet3
-   ls -la
-   mv file1.txt file2.txt privet1
+
+#!/bin/bash
+
+cd part2
+
+mkdir 1 2 3
+
+cd 1
+
+touch file1.txt file2.txt file3.txt file4.json file5.json
+
+mkdir privet1 privet2 privet3
+
+ls -la
+
+mv file1.txt file2.txt privet1
+
 "ctrl+c"
+
 chmod +x ./script.sh
+
 ./script.sh
